@@ -247,7 +247,6 @@
   基本信息：Class
     """
     
-    
     # 判断键值对是否存在
     info = {
         'name': '张三',
@@ -260,10 +259,10 @@
     ```
     
   - 按顺序遍历字典中的所有键
-
-    使用sorted()进行排序
-
-    ```python
+  
+  使用sorted()进行排序
+  
+  ```python
     info = {
         'name': '张三',
         'age': 20,
@@ -273,12 +272,12 @@
     for key in sorted(info.keys()):
         print(key)
     ```
-
-  - **遍历字典中的所有值**
-
-    values() 返回值列表
-
-    ```python
+  
+- **遍历字典中的所有值**
+  
+  values() 返回值列表
+  
+  ```python
     info = {
         'name': '张三',
         'age': 20,
@@ -288,10 +287,10 @@
     for value in info.values():   # 没有考虑值重复
         print(value)
     ```
-
-    使用 `set()` 去除重复值 
-
-    ```python
+  
+  使用 `set()` 去除重复值 
+  
+  ```python
     info = {
         'name': '张三',
         'age': 20,
