@@ -5,7 +5,6 @@
 # Cheat Sheet
 
 ## 1 起步
-
 安装环境
 
 ## 2 变量和简单数据类型
@@ -51,16 +50,15 @@
   # 练习 3-4
   friend = ['Alice', 'Bob', 'John']
   print(friend)
-  
-  ```
-# 练习 3-5
+
+  # 练习 3-5
   print('Bob无法参加')
   friend[1] = 'Smith'
   print(friend)
 
   # 练习 3-6
   print('找到了一个更大的场地')
-friend.insert(0, '小米')
+  friend.insert(0, '小米')
   friend.insert(2, '小花')
   friend.append('小红')
   print(friend)
@@ -101,32 +99,38 @@ friend.insert(0, '小米')
 - for 循环遍历列表
   - for ele in list:   ele变量在 for 循环外依然存在？
   - 注意代码缩进
+  
 - 创建数字列表: 使用 range() 函数，可指定起始值(默认从 0 开始)，结束值(不包含在内)，步长(默认为 1)
   - 利用 list() 函数将结果变为列表  `number = list(range(2, 6, 2))  # 数字列表`
   - 统计计算：max(list), min(list), sum(list)
+  
 - **列表解析**：①for 循环提供值；②存储值
-​```python
-# 示例：nums = [value for value in range(10)]  前后value一致
-numbers = [value ** 3 for value in range(10)]
-# 输出：[0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
-  ```
-- **切片**：获取列表的一部分内容
-  - 利用负索引切片  `print(numbers[-3:])  # 输出: [343, 512, 729]`
-  - **复制列表**
+
   ```python
+  # 示例：nums = [value for value in range(10)]  前后value一致
   numbers = [value ** 3 for value in range(10)]
-  nums = numbers  # 不是复制新的列表,只是将 numbers 的值赋给 nums,两个变量指向的内容是一致的
-  print(id(nums))  # 返回变量的内存地址 唯一
-  print(id(numbers))
-
-  # 创建新 list 的两种方法：切片和 list()
-  nums = numbers[:]
-  print(id(nums))
-
-  nums = list(numbers)
-  print(id(nums))
+  # 输出：[0, 1, 8, 27, 64, 125, 216, 343, 512, 729]
   ```
 
+- **切片**：获取列表的一部分内容
+
+  - 利用负索引切片  `print(numbers[-3:])  # 输出: [343, 512, 729]`
+
+  - **复制列表**
+
+    ```python
+    numbers = [value ** 3 for value in range(10)]
+    nums = numbers  # 不是复制新的列表,只是将 numbers 的值赋给 nums,两个变量指向的内容是一致的
+    print(id(nums))  # 返回变量的内存地址 唯一
+    print(id(numbers))
+    
+    # 创建新 list 的两种方法：切片和 list()
+    nums = numbers[:]
+    print(id(nums))
+    
+    nums = list(numbers)
+    print(id(nums))
+    ```
 - 元组
 
   - 元组同样使用索引访问
