@@ -245,6 +245,7 @@
     基本信息：name
     基本信息：age
   基本信息：Class
+    
     """
     
     # 判断键值对是否存在
@@ -271,7 +272,7 @@
     
     for key in sorted(info.keys()):
         print(key)
-    ```
+  ```
   
 - **遍历字典中的所有值**
   
@@ -286,7 +287,7 @@
     
     for value in info.values():   # 没有考虑值重复
         print(value)
-    ```
+  ```
   
   使用 `set()` 去除重复值 
   
@@ -300,7 +301,7 @@
     
     for value in set(info.values()):   # 使用set提取不同的值
         print(value)
-    ```
+  ```
 
 ## 7 用户输入和while循环
 
