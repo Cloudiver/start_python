@@ -39,11 +39,11 @@
       
       ```text
       pop()  和 append() 常常配合一起使用
-    比如：
-      已经有一个list   sizes = [10, 20, 30, 40]
-      先用pop从末尾弹出元素，并用变量接收   size = sizes.pop()
-      准备一个空list  numbers = []
-      然后将弹出的值装进去  numbers.append(size)
+      比如：
+        已经有一个list   sizes = [10, 20, 30, 40]
+        先用pop从末尾弹出元素，并用变量接收   size = sizes.pop()
+        准备一个空list  numbers = []
+        然后将弹出的值装进去  numbers.append(size)
       ```
   - 练习
   ```python
