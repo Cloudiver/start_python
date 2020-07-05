@@ -46,9 +46,6 @@
       准备一个空list  numbers = []
       然后将弹出的值装进去  numbers.append(size)
       ```
-    ```
-    
-    ```
   - 练习
   ```python
   # 练习 3-4
